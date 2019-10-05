@@ -1,0 +1,19 @@
+version: "2"
+services:
+  node:
+    image: node:latest
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/home/node/app:rw
+      - ./hugo:/home/node/app/hugo
+    ports:
+      - "8088:8088"
+    command: "npm run nodemon"
+    restart: always
+    logging:
+        options:
+            max-size: '10m'
+            max-file: '10'
+        driver: json-file
