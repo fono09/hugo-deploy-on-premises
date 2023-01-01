@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "config": "^3.2.3",
+    "config": "^3.3.8",
     "fs-extra": "^8.1.0",
     "github-webhook-handler": "^0.7.1",
     "nodemon": "^1.19.3",
